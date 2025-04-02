@@ -72,5 +72,15 @@ namespace TextEditor {
                 this.Close();
             }
         }
+
+        //in progress
+        //nothing will be printed if used
+        private void printToolStripMenuItem_Click(object sender, EventArgs e) {
+            printDialog1.ShowHelp = true;
+            if (printDialog1.ShowDialog() == DialogResult.OK) {
+                printDocument1.Print();
+               
+            }
+        }
     }
 }
